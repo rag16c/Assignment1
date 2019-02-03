@@ -18,7 +18,7 @@ class SimpleHammer : public Weapon {
  SimpleHammer() : Weapon("Simple hammer", 25) {
   }
 
-  virtual ~SimpleHammer();
+  virtual ~SimpleHammer(){};
 
   virtual double hit(double armor);
 
