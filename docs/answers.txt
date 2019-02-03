@@ -1,1 +1,35 @@
-a
+a) Enumerating objects: 11, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 797 bytes | 398.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/rag16c/Assignment1.git
+   3d373c9..dbf4d31  master -> master
+
+b) 6 
+	git rev-list --count HEAD
+	
+c) 2019-01-10 16:45:38
+	git blame .gitignore
+	
+d) When you want to add a new feature or fix, you make a branch to hold the changes you are trying to implement
+	Keep the main code free from unstable code
+	
+e) git status - Shows changed files in a directory that are staged for a commit
+	git log - Shows all commits in a branches history
+	
+f) git log --follow Weapon.h
+
+g) git log --grep='file' 
+
+h) Inheritance - Allows new objects to take on properties of existing objects
+	Polymorphism- Ability to redefine methods for derived classes
+	Encapsulation - Process of combining data and function into a class. Where the data can be modified through public functions. Hides complexity.
+	
+i) In a Dictator and lieutenant workflow, developers make commits and then a lieutenant decides to merge the changes or not. Then the dictator decides whether to push the changes.
+   An Integration workflow has developers having a private and public repository, where everything in the public repository is merged and pushed into the central one. 
+	A select few can push changes in dictator while everyone can in integrated.
+
+j) 100 Developers would benefit from Dictator workflow instead of integration workflow because they would not have to worry about other developers making mistakes to the central repository but instead would have lietenants and dictators deciding whether the commits or merges are worth it. 
