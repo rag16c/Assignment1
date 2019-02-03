@@ -12,7 +12,7 @@ Created on February 3, 2019 at 6:07 AM
 double CrazyRandomSword::hit(double armor) {
   srand(time(NULL));
   int armorIgnore = rand()%(int)(armor/3 - 2) + 2;
-  double damage = hitpoints - (armor - armorIgnore);
+  double damage = hitPoints - armorIgnore;
   if ( damage <= 0 )
     return 0;
   else 
