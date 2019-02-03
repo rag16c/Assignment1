@@ -33,3 +33,7 @@ i) In a Dictator and lieutenant workflow, developers make commits and then a lie
 	A select few can push changes in dictator while everyone can in integrated.
 
 j) 100 Developers would benefit from Dictator workflow instead of integration workflow because they would not have to worry about other developers making mistakes to the central repository but instead would have lietenants and dictators deciding whether the commits or merges are worth it. 
+
+
+5) RoleGame uses polymorphism, because the weapons class has a function called hit, and all of the derived classes of Weapon all have a different implementation of this method.
+	RoleGame also uses encapsulation. The Weapons class holds all the data for weapons, the WeaponFactory holds all the tools for creating the weapons. YOu see none of that in the main function or in the respective weapon classes.
