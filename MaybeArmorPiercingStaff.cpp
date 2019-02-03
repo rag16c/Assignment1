@@ -10,7 +10,7 @@ Created on February 3, 2019 at 4:11 PM
 #include <cstdlib>
 
 
-double MaybeArmorPiercingStaff:hit(double armor) {
+double MaybeArmorPiercingStaff::hit(double armor) {
   srand(time(NULL));
 
   if ( armor < hitPoints/2 ) {
