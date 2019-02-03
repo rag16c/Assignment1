@@ -13,7 +13,7 @@ Created on February 3, 2019 at 5:59 AM
 
 class CrazyRandomSword : public Weapon {
  public:
- CrazyRandomSword() : Weapon("Crazy Random Sword", -1) { }
+ CrazyRandomSword() : Weapon("Crazy Random Sword", 7, 100) { }
 
   virtual ~CrazyRandomSword(){};
 
