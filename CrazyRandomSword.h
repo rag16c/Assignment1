@@ -6,7 +6,6 @@ Created on February 3, 2019 at 5:59 AM
 */
 
 #include <string>
-#include <cstdlib>
 #include "Weapon.h"
 
 #ifndef CRAZYRANDOMSWORD_H
@@ -14,8 +13,7 @@ Created on February 3, 2019 at 5:59 AM
 
 class CrazyRandomSword : public Weapon {
  public:
- CrazyRandomSword() : Weapon("Crazy Random Sword", rand()%94 +7) {
-  }
+ CrazyRandomSword() : Weapon("Crazy Random Sword", -1) { }
 
   virtual ~CrazyRandomSword(){};
 
