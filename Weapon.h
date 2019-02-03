@@ -36,11 +36,13 @@ public:
     Weapon(std::string name, double hitPoints)
             : name(name),
               hitPoints(hitPoints) {
-		srand(time(NULL));
-		  if ( this->hitPoints == -1 ) {
-		    this->hitPoints = rand()%94 + 7;
-		  }} //This is equivalent to this.name = name and this.hitpoints = hitpoitns;
-		      
+	      } //This is equivalent to this.name = name and this.hitpoints = hitpoitns;
+	
+ Weapon(std::string name, double lowHit, double highHit) : name(name)
+    {
+      srand(time(NULL));
+      this->hitPoints = rand()%(int)(highHit-lowHit) + lowHit;
+    }
     /**
      * Detructor
      */
