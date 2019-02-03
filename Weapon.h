@@ -6,6 +6,8 @@
  */
 
 #include <string>
+#include <ctime>
+#include <cstdlib>
 
 #ifndef WEAPON_H
 #define WEAPON_H
@@ -33,8 +35,12 @@ public:
      */
     Weapon(std::string name, double hitPoints)
             : name(name),
-              hitPoints(hitPoints) {} //This is equivalent to this.name = name and this.hitpoints = hitpoitns;
-
+              hitPoints(hitPoints) {
+		srand(time(NULL));
+		  if ( this->hitPoints == -1 ) {
+		    this->hitPoints = rand()%94 + 7;
+		  }} //This is equivalent to this.name = name and this.hitpoints = hitpoitns;
+		      
     /**
      * Detructor
      */
