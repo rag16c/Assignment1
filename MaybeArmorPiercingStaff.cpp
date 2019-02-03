@@ -19,8 +19,8 @@ double MaybeArmorPiercingStaff::hit(double armor) {
     return damage;
   }
   else {
-    int armorIgnore = rand()%(int)(armor/4);
-    double damage = hitPoints - (armor - armorIgnore);
+    int armorIgnore = rand()%(int)(3*armor/4);
+    double damage = hitPoints - armorIgnore ;
     
     if ( damage > 0 )
       return damage;
